@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import json
 
-class weixin_spider:
+class WeixinSpider:
     def __init__(self, ):
         self.check = True
 
@@ -54,16 +54,5 @@ class weixin_spider:
 
 
 if __name__ == '__main__':
-    print '''''
-              *****************************************
-              **    Welcome to Spider of 公众号爬虫       **
-              **      Created on 2017-08--20          **
-              **      @author: leon.si         **
-              *****************************************
-      '''
-
-    # subscription = raw_input(u'输入要爬取的公众号')
-    # if not subscription:
-    #     subscription = 'Article'
-    weixin_spider().run("VIP陪练家长联盟")
+    WeixinSpider().run("VIP陪练家长联盟")
 
